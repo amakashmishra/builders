@@ -1,0 +1,128 @@
+/* Recent Section */
+.recent .text {
+  padding: 30px;
+}
+
+.recent .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.recent .category i {
+  font-size: 20px;
+  color: #bec7d8;
+}
+
+.recent p {
+  color: #72809d;
+}
+
+.recent .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px;
+}
+
+/* Grid Layout */
+.content.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Box Shadow and Card Styling */
+.recent .box {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.recent .box:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Container */
+.recent .img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.recent .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .content.grid3 {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+    gap: 15px;
+  }
+  .recent .text {
+    padding: 25px;
+  }
+}
+
+/* Small Tablets & Large Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .content.grid3 {
+    grid-template-columns: repeat(1, 1fr); /* Single column */
+    gap: 15px;
+  }
+  .recent .text {
+    padding: 20px;
+  }
+  .recent .button {
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .content.grid3 {
+    gap: 10px;
+  }
+  .recent .text {
+    padding: 15px;
+  }
+  .recent .category span {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  .recent .button {
+    padding: 8px 15px;
+  }
+  .recent .box {
+    border-radius: 6px;
+  }
+  .recent .img {
+    height: 180px;
+  }
+}
+
+/* Extra Small Devices (max-width: 360px) */
+@media screen and (max-width: 360px) {
+  .recent .text {
+    padding: 10px;
+  }
+  .recent .category span {
+    font-size: 11px;
+    padding: 2px 8px;
+  }
+  .recent .button {
+    padding: 5px 10px;
+  }
+  .recent .img {
+    height: 150px;
+  }
+}

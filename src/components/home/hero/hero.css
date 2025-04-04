@@ -1,0 +1,95 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* Swiper Slider */
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure All Images Have Same Size Without Stretching */
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures original proportions are maintained */
+}
+
+/* Overlay Content */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;  /* Make text white */
+}
+
+.hero-content p {
+  font-size: 18px;
+  opacity: 1;  /* Ensure full visibility */
+  color: white;  /* Make text white */
+}
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 80vh;
+  }
+  .hero-content h1 {
+    font-size: 42px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero-content h1 {
+    font-size: 36px;
+  }
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 60vh;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 12px;
+  }
+}
