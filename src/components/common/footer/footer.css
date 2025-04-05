@@ -12,6 +12,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .footerContact h1 {
@@ -50,10 +53,20 @@ footer {
 
 footer .container {
   display: grid;
-  grid-template-columns: 4fr 2fr 2fr 2fr;
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
+/* Column boxes */
+footer .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ======= LOGO AND NEWSLETTER ======= */
 footer .logo img {
   width: 150px;
   margin-bottom: 15px;
@@ -72,35 +85,34 @@ footer p {
   margin-bottom: 20px;
 }
 
-/* ======= NEWSLETTER SECTION ======= */
 footer .input {
   display: flex;
-  align-items: center;
   gap: 10px;
   background-color: #fff;
   border-radius: 5px;
   padding: 5px;
-  max-width: 400px;
-  margin: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
 }
 
 footer input {
   flex: 1;
-  padding: 15px;
+  padding: 12px;
   border-radius: 5px;
   border: none;
   font-size: 14px;
   outline: none;
-  width: 100%;
 }
 
 footer .input button {
-  padding: 15px 20px;
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
   background: #27ae60;
   color: white;
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
   white-space: nowrap;
@@ -120,6 +132,7 @@ footer h3 {
 footer ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 footer ul li {
@@ -128,10 +141,55 @@ footer ul li {
   margin-bottom: 12px;
   transition: 0.3s;
   cursor: pointer;
+  line-height: 1.6;
 }
 
-footer ul li:hover {
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer ul li:hover,
+footer ul li a:hover {
   color: white;
+}
+
+/* ======= CONTACT INFO ======= */
+footer .contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* ======= SOCIAL MEDIA ======= */
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+footer .social-icons a {
+  color: #fff;
+  font-size: 18px;
+  background: #27ae60;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  background: #218c54;
+  transform: scale(1.1);
 }
 
 /* ======= LEGAL SECTION ======= */
@@ -145,9 +203,11 @@ footer ul li:hover {
 }
 
 /* ======= RESPONSIVE DESIGN ======= */
-@media screen and (max-width: 1024px) {
+
+/* Tablets (max-width: 1024px) */
+@media screen and (min-width: 1025px) {
   footer .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
   }
 
   .footerContact h1 {
@@ -155,23 +215,16 @@ footer ul li:hover {
   }
 }
 
+/* Mobile Devices (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .footerContact {
-    text-align: center;
     padding: 30px 20px;
   }
 
   .footerContact .send {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-  }
-
-  .footerContact h1 {
-    font-size: 28px;
-  }
-
-  .footerContact p {
-    font-size: 14px;
   }
 
   footer .container {
@@ -179,29 +232,37 @@ footer ul li:hover {
     text-align: center;
   }
 
+  footer .box {
+    align-items: center;
+  }
+
   footer .input {
     flex-direction: column;
-    max-width: 100%;
-    width: 100%;
+    gap: 10px;
     padding: 10px;
   }
 
-  footer input {
-    width: 100%;
-    padding: 12px;
-  }
-
+  footer input,
   footer .input button {
     width: 100%;
-    padding: 12px;
     text-align: center;
-    font-size: 16px;
+  }
+
+  footer .social-icons {
+    justify-content: center;
+  }
+
+  footer .contact-info li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
+/* Small Phones (max-width: 576px) */
 @media screen and (max-width: 576px) {
   .footerContact h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   footer h2 {
@@ -212,11 +273,41 @@ footer ul li:hover {
     font-size: 16px;
   }
 
-  footer ul li {
+  footer ul li,
+  footer .contact-info li {
     font-size: 13px;
   }
 
   .legal {
     font-size: 12px;
+  }
+}
+
+/* Extra Small Devices (max-width: 360px) */
+@media screen and (max-width: 360px) {
+  .footerContact h1 {
+    font-size: 22px;
+  }
+
+  .footerContact .btn5 {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  footer .input {
+    gap: 8px;
+  }
+
+  footer input {
+    font-size: 13px;
+  }
+
+  footer .input button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .legal {
+    padding: 10px;
   }
 }

@@ -1,32 +1,43 @@
 import React from "react"
 import { list } from "../../data/Data"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination, Autoplay } from "swiper/modules"
+
+import "swiper/css"
+import "swiper/css/pagination"
 
 const RecentCard = () => {
   return (
     <>
-      <div className='content grid3 mtop'>
+      <div className='recent content grid3 mtop'>
         {list.map((val, index) => {
-          const { cover, category, location, name, price, type } = val
+          const { cover, cover1, cover2, cover3, cover4, location, name } = val
+
+          // Gather only the available images into an array
+          const images = [cover, cover1, cover2, cover3, cover4].filter(Boolean)
+
           return (
             <div className='box shadow' key={index}>
               <div className='img'>
-                <img src={cover} alt='' />
+                <Swiper
+                  modules={[Pagination, Autoplay]}
+                  pagination={{ clickable: true }}
+                  autoplay={{ delay: 3000, disableOnInteraction: false }}
+                  loop={images.length > 1} // Only loop if there's more than 1 image
+                  spaceBetween={10}
+                >
+                  {images.map((img, i) => (
+                    <SwiperSlide key={i}>
+                      <img src={img} alt={`cover${i + 1}`} />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
               <div className='text'>
-                <div className='category flex'>
-                  <span style={{ background: category === "For Sale" ? "#25b5791a" : "#ff98001a", color: category === "For Sale" ? "#25b579" : "#ff9800" }}>{category}</span>
-                  <i className='fa fa-heart'></i>
-                </div>
                 <h4>{name}</h4>
                 <p>
-                  <i className='fa fa-location-dot'></i> {location}
+                  {location}
                 </p>
-              </div>
-              <div className='button flex'>
-                <div>
-                  <button className='btn2'>{price}</button> <label htmlFor=''>/sqft</label>
-                </div>
-                <span>{type}</span>
               </div>
             </div>
           )

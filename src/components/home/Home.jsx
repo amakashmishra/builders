@@ -6,6 +6,8 @@ import Location from "./location/Location"
 // import Price from "./price/Price"
 import Recent from "./recent/Recent"
 import Team from "./team/Team"
+import Video from "../video/video"
+import Information from "../Imfomation/Information"
 
 const Home = () => {
   return (
@@ -15,7 +17,9 @@ const Home = () => {
       <Recent />
       <Awards />
       <Location />
-      <Team />
+      {/* <Team /> */}
+      <Video />
+      <Information />
       {/* <Price /> */}
     </>
   )

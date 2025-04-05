@@ -1,3 +1,41 @@
+import raiway from '../../assets/Images/raiway.jpg';
+import expressway from '../../assets/Images/Mumbai-Pune-Expressway.jpg'
+import airport from '../../assets/Images/airport.jpg'
+import reliance from '../../assets/Images/reliance.jpg'
+import dmart from '../../assets/Images/d-mart.jpg'
+
+import plan1 from '../../assets/Images/plan1.jpg'
+import plan2 from '../../assets/Images/pain2.jpg'
+import plan3 from '../../assets/Images/pain3.jpg'
+import plan4 from '../../assets/Images/pain4.jpg'
+import plan5 from '../../assets/Images/pain5.jpg'
+import plan6 from '../../assets/Images/pain6.jpg'
+
+import img1 from '../../assets/Images/Img1.jpg'
+import img2 from '../../assets/Images/img2.jpg'
+import img3 from '../../assets/Images/img3.jpg'
+
+import flat2 from '../../assets/Images/flat2.jpg'
+import flat3 from '../../assets/Images/flat3.jpg'
+import flat4 from '../../assets/Images/flat4.jpg'
+import flat5 from '../../assets/Images/flat5.jpg'
+import flat6 from '../../assets/Images/flat6.jpg'
+import flat7 from '../../assets/Images/flat7.jpg'
+import flat8 from '../../assets/Images/flat8.jpg'
+import flat9 from '../../assets/Images/flat9.jpg'
+import flat10 from '../../assets/Images/flat10.jpg'
+
+import loc1 from '../../assets/Images/loc1.jpg'
+import loc2 from '../../assets/Images/loc2.jpg'
+import loc3 from '../../assets/Images/loc3.png'
+import loc4 from '../../assets/Images/loc4.jpg'
+import loc5 from '../../assets/Images/loc5.jpg'
+import loc6 from '../../assets/Images/loc6.jpg'
+import loc7 from '../../assets/Images/loc7.jpg'
+import loc8 from '../../assets/Images/loc8.jpg'
+import loc9 from '../../assets/Images/loc9.jpg'
+
+
 export const nav = [
   {
     text: "home",
@@ -12,7 +50,7 @@ export const nav = [
     path: "/services",
   },
   {
-    text: "blog",
+    text: "features",
     path: "/blog",
   },
   {
@@ -22,159 +60,165 @@ export const nav = [
 ]
 export const featured = [
   {
-    cover: "../images/hero/h1.png",
-    name: "Family House",
-    total: "122 Property",
+    cover: raiway,
+    name: "Railway Station",
+    total: "5 Min",
   },
   {
-    cover: "../images/hero/h2.png",
-    name: "House & Villa",
-    total: "155 Property",
+    cover: expressway,
+    name: "Mumbai Pune Expressway",
+    total: "15 Min",
   },
   {
-    cover: "../images/hero/h3.png",
-    name: "Apartment",
-    total: "300 Property",
+    cover: airport,
+    name: "Navi Mumbai Airport",
+    total: "30 Min",
   },
   {
-    cover: "../images/hero/h4.png",
-    name: "Office & Studio",
-    total: "80 Property",
+    cover: reliance,
+    name: "Reliance Petrol Pump",
+    total: "3 Min",
   },
   {
-    cover: "../images/hero/h6.png",
-    name: "Villa & Condo",
-    total: "80 Property",
+    cover: dmart,
+    name: "DMart",
+    total: "5 Min",
   },
 ]
 export const list = [
   {
     id: 1,
-    cover: "../images/list/p-1.png",
-    name: "Red Carpet Real Estate",
-    location: "210 Zirak Road, Canada",
-    category: "For Rent",
-    price: "$3,700",
-    type: "Apartment",
+    cover: img1,
+    cover2: flat2,
+    cover3: flat9,
+    name: "Krishna Heritage",
+    location: "Spacious 1, 2 & 3 BHK Residences",
   },
   {
     id: 2,
-    cover: "../images/list/p-2.png",
-    name: "Fairmount Properties",
-    location: "5698 Zirak Road, NewYork",
-    category: "For Sale",
-    price: "$9,750",
-    type: "Condos",
+    cover: img2,
+    cover1: plan1,
+    cover2: plan2,
+    name: "Krishna Heritage",
+    location: "Vaastu-Compliant Layouts",
   },
   {
     id: 3,
-    cover: "../images/list/p-7.png",
-    name: "The Real Estate Corner",
-    location: "5624 Mooker Market, USA",
-    category: "For Rent",
-    price: "$5,860",
-    type: "Offices",
+    cover: img3,
+    cover1: flat7,
+    cover2: flat8,
+    name: "Krishna Heritage",
+    location: "Premium Quality Construction",
   },
   {
     id: 4,
-    cover: "../images/list/p-4.png",
-    name: "Herringbone Realty",
-    location: "5621 Liverpool, London",
-    category: "For Sale",
-    price: "$7,540",
-    type: "Homes & Villas",
-  },
-  {
-    id: 5,
-    cover: "../images/list/p-5.png",
-    name: "Brick Lane Realty",
-    location: "210 Montreal Road, Canada",
-    category: "For Rent",
-    price: "$4,850",
-    type: "Commercial",
-  },
-  {
-    id: 6,
-    cover: "../images/list/p-6.png",
-    name: "Banyon Tree Realty",
-    location: "210 Zirak Road, Canada",
-    category: "For Sale",
-    price: "$2,742",
-    type: "Apartment",
+    cover: flat3,
+    cover1: flat4,
+    cover2: flat5,
+    cover3: flat6,
+    cover4: flat10,
+    name: "Krishna Heritage",
+    location: "Ample Parking Space",
   },
 ]
 export const awards = [
   {
-    icon: <i class='fa-solid fa-trophy'></i>,
-    num: "32 M	",
-    name: "Blue Burmin Award",
+    icon: <i className="fa-solid fa-people-roof"></i>, // Represents community/family
+    num: "100+",
+    name: "Happy Families",
   },
   {
-    icon: <i class='fa-solid fa-briefcase'></i>,
-    num: "43 M",
-    name: "Mimo X11 Award",
+    icon: <i className="fa-solid fa-briefcase-clock"></i>, // Represents experience over years
+    num: "5+ Years",
+    name: "Trusted Service",
   },
   {
-    icon: <i class='fa-solid fa-lightbulb'></i>,
-    num: "51 M",
-    name: "Australian UGC Award",
+    icon: <i className="fa-solid fa-building-circle-check"></i>, // Represents quality construction
+    num: "A+ Grade",
+    name: "High-Quality Construction",
   },
   {
-    icon: <i class='fa-solid fa-heart'></i>,
-    num: "42 M",
-    name: "IITCA Green Award",
+    icon: <i className="fa-solid fa-face-smile"></i>, // Represents satisfaction
+    num: "98%",
+    name: "Resident Satisfaction",
   },
-]
+];
+
 export const location = [
   {
     id: 1,
-    name: "New Orleans, Louisiana",
-    Villas: "12 Villas",
-    Apartments: "10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-1.png",
+    name: "Flooring",
+    Villas: "Vitrified tiles in all rooms",
+    Apartments: "Anti-skid tiles in wet areas",
+    Offices: "Granite finish flooring",
+    cover: loc1,
   },
   {
     id: 2,
-    name: "Jerrsy, United State",
-    Villas: "12 Villas",
-    Apartments: "10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-2.png",
+    name: "Kitchen",
+    Villas: "Modular kitchen with granite top",
+    Apartments: "Tiled backsplash & sink",
+    Offices: "Compact pantry space",
+    cover: loc2,
   },
   {
     id: 3,
-    name: "Liverpool, London",
-    Villas: "12 Villas",
-    Apartments: " 10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-3.png",
+    name: "Paints",
+    Villas: "Premium weatherproof paint",
+    Apartments: "Smooth emulsion finish",
+    Offices: "Low-VOC wall paint",
+    cover: loc3,
   },
   {
     id: 4,
-    name: "NewYork, United States",
-    Villas: "12 Villas",
-    Apartments: " 10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-4.png",
+    name: "Doors & Windows",
+    Villas: "Teak wood doors, UPVC windows",
+    Apartments: "Flush doors, sliding windows",
+    Offices: "Glass doors, aluminum frames",
+    cover: loc4,
   },
   {
     id: 5,
-    name: "Montreal, Canada",
-    Villas: "12 Villas",
-    Apartments: " 10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-5.png",
+    name: "Plumbing",
+    Villas: "Branded CP fittings",
+    Apartments: "Modern plumbing setup",
+    Offices: "Commercial-grade fittings",
+    cover: loc5,
   },
   {
     id: 6,
-    name: "California, USA",
-    Villas: "12 Villas",
-    Apartments: " 10 Apartments",
-    Offices: "07 Offices",
-    cover: "./images/location/city-6.png",
+    name: "Electrical",
+    Villas: "Modular switches, inverter ready",
+    Apartments: "Copper wiring & MCBs",
+    Offices: "Ample sockets, concealed wiring",
+    cover: loc6,
   },
-]
+  {
+    id: 7,
+    name: "Washroom",
+    Villas: "Wall-mounted WC & basin",
+    Apartments: "Modern fixtures & tiles",
+    Offices: "Compact restrooms",
+    cover: loc7,
+  },
+  {
+    id: 8,
+    name: "Water Tanks",
+    Villas: "Overhead RCC tanks",
+    Apartments: "Common water storage",
+    Offices: "Automated supply system",
+    cover: loc8,
+  },
+  {
+    id: 9,
+    name: "Security",
+    Villas: "Video door phone, CCTV",
+    Apartments: "24/7 security with guards",
+    Offices: "Access control system",
+    cover: loc9,
+  },
+];
+
 export const team = [
   {
     list: "50",
@@ -300,15 +344,7 @@ export const price = [
 ]
 export const footer = [
   {
-    title: "LAYOUTS",
+    title: "All Sections",
     text: [{ list: "Home Page" }, { list: "About Page" }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }],
-  },
-  {
-    title: "ALL SECTIONS",
-    text: [{ list: "Headers" }, { list: "Features" }, { list: "Attractive" }, { list: "Testimonials" }, { list: "Videos" }, { list: "Footers" }],
-  },
-  {
-    title: "COMPANY",
-    text: [{ list: "About" }, { list: "Blog" }, { list: "Pricing" }, { list: "Affiliate" }, { list: "Login" }, { list: "Changelog" }],
-  },
+  }
 ]

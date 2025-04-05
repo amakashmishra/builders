@@ -14,9 +14,10 @@
 
 /* Featured Images */
 .featured img {
-  width: 65px;
-  height: 65px;
+  width: 155px;
+  height: 85px;
   margin: auto;
+  border-radius: 3px;
 }
 
 /* Grid Layout */
@@ -39,8 +40,8 @@
     padding: 25px;
   }
   .featured img {
-    width: 60px;
-    height: 60px;
+    width: 350px;
+    height: 185px;
   }
 }
 
@@ -54,8 +55,8 @@
     padding: 20px;
   }
   .featured img {
-    width: 55px;
-    height: 55px;
+    width: 300px;
+    height: 150px;
   }
 }
 
@@ -63,13 +64,13 @@
 @media screen and (max-width: 480px) {
   .content.grid5 {
     grid-template-columns: repeat(1, 1fr); /* 1 column for full width */
-    gap: 10px;
+    gap: 15px;
   }
   .featured .box {
-    padding: 15px;
+    padding: 25px;
   }
   .featured img {
-    width: 50px;
-    height: 50px;
+    width: 250px;
+    height: 125px;
   }
 }

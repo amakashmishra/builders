@@ -50,6 +50,33 @@
   background: #218c54;
 }
 
+/* ======= MORE INFO (Toggle Section) ======= */
+.about .more-info {
+  margin-top: 25px;
+  background: #f4f4f4;
+  padding: 20px 25px;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about .more-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about .more-info ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about .more-info ul li {
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
 /* ======= IMAGE STYLING ======= */
 .about .right img {
   width: 100%;
@@ -73,6 +100,10 @@
     padding: 0;
     font-size: 15px;
   }
+
+  .about .more-info {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -88,6 +119,14 @@
   .about .right img {
     margin-top: 30px;
   }
+
+  .about .more-info {
+    padding: 15px;
+  }
+
+  .about .more-info ul li {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -102,6 +141,19 @@
   }
 
   .about p {
+    font-size: 13px;
+  }
+
+  .about .right img {
+    margin-top: 20px;
+  }
+
+  .about .container {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .about .more-info ul li {
     font-size: 13px;
   }
 }
