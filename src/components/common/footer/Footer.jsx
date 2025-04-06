@@ -50,13 +50,16 @@ const Footer = () => {
           <div className='box'>
             <h3>{footer[0].title}</h3>
             <ul>
-              {footer[0].text.map((items, i) => (
-                <li key={i}>
-                  <Link to={`/${items.list.toLowerCase().replace(/ /g, "-")}`}>
-                    {items.list}
-                  </Link>
-                </li>
-              ))}
+              {footer[0].text.map((item, i) => {
+                console.log("item", item);
+                return (
+                  <li key={i}>
+                    <Link to={item.path}>
+                      {item.list}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 

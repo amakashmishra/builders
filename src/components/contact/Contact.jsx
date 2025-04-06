@@ -1,28 +1,117 @@
-import React from "react"
-import img from "../images/pricing.jpg"
-import Back from "../common/Back"
-import "./contact.css"
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import img from "../images/pricing.jpg";
+import "./contact.css";
 
 const Contact = () => {
+  const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true)
+    emailjs
+      .sendForm(
+        "service_445dfw8",
+        "template_zla8kfs",
+        formRef.current,
+        "xMlDZeWeXrRAjP22c"
+      )
+      .then(
+        (result) => {
+          toast.success("Email sent successfully!");
+          formRef.current.reset();
+        },
+        (error) => {
+          console.error("Email sending error:", error);
+          toast.error("❌ Failed to send message.");
+        }
+      ).finally(
+        () => {
+          setLoading(false)
+        }
+      )
+  };
+
   return (
     <>
-      <section className='contact mb'>
-        <Back name='Contact Us' title='Get Helps & Friendly Support' cover={img} />
-        <div className='container'>
-          <form className='shadow'>
-            <h4>Fillup The Form</h4> <br />
-            <div>
-              <input type='text' placeholder='Name' />
-              <input type='text' placeholder='Email' />
-            </div>
-            <input type='text' placeholder='Subject' />
-            <textarea cols='30' rows='10'></textarea>
-            <button>Submit Request</button>
-          </form>
+    <section className='contact mb'>
+      <div className='back'>
+        <img src={img} alt='Contact Us' />
+        <div className='container back-text'>
+          <span>Contact Us</span>
+          <h1>Get Help & Friendly Support</h1>
         </div>
-      </section>
-    </>
-  )
-}
+      </div>
 
-export default Contact
+      <div className='container form-map-wrap'>
+        <form
+          ref={formRef}
+          onSubmit={sendEmail}
+          method='post'
+          encType='multipart/form-data'
+          className='shadow'
+        >
+          <h4>Fill Up The Form</h4>
+
+          <div className='input-row'>
+            <input
+              type='text'
+              name='user_name'
+              placeholder='Name'
+              required
+            />
+            <input
+              type='email'
+              name='user_email'
+              placeholder='Email'
+              required
+            />
+          </div>
+
+          <input
+            type='text'
+            name='subject'
+            placeholder='Subject'
+            required
+          />
+          <textarea
+            name='message'
+            placeholder='Message'
+            rows='6'
+            required
+          ></textarea>
+          <button type='submit' disabled={loading}>
+            {loading ? (
+              <>
+                <span className="spinner" /> Sending...
+              </>
+            ) : (
+              "Submit Request"
+            )}
+          </button>
+        </form>
+
+        <div className='map'>
+          <iframe
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8168975939157!2d72.84474757888162!3d19.20319813568753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6d8ccbb37bb%3A0xe371758095a30cf3!2sBhuvan%20Society%2C%20Swami%20Vivekananda%20Rd%2C%20Kandivali%20%20West%2C%20Mumbai%2C%20Maharashtra%20400067!5e0!3m2!1shi!2sin!4v1743905980157!5m2!1shi!2sin'
+            width='100%'
+            height='100%'
+            style={{ border: 0 }}
+            allowFullScreen=''
+            loading='lazy'
+            referrerPolicy='no-referrer-when-downgrade'
+            title='Google Map'
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <ToastContainer position='top-right' autoClose={3000} />
+    </>
+  );
+};
+
+export default Contact;

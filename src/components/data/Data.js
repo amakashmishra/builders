@@ -345,6 +345,6 @@ export const price = [
 export const footer = [
   {
     title: "All Sections",
-    text: [{ list: "Home Page" }, { list: "About Page" }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }],
+    text: [{ list: "Home Page", path: "/" }, { list: "About Page", path: "/about" }, { list: "Service Page", path: "/services" }, { list: "Feature Page", path: "/blog" }, { list: "Contact Page", path: "/contact" }],
   }
 ]

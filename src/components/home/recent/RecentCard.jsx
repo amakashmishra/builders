@@ -22,8 +22,8 @@ const RecentCard = () => {
                 <Swiper
                   modules={[Pagination, Autoplay]}
                   pagination={{ clickable: true }}
-                  autoplay={{ delay: 3000, disableOnInteraction: false }}
-                  loop={images.length > 1} // Only loop if there's more than 1 image
+                  autoplay={{ delay: 3000 + index * 600, disableOnInteraction: false }}
+                  loop={images.length > 1}
                   spaceBetween={10}
                 >
                   {images.map((img, i) => (
