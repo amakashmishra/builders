@@ -1,7 +1,7 @@
 import React from "react";
 import { footer } from "../../data/Data";
 import "./footer.css";
-import Logo from "../../../assets/Icons/DevGroup.png";
+import Logo from "../../../assets/Images/Brown and Gold Luxury Real Estate Business Card_20250313_185004_0000.png";
 import { Link } from "react-router-dom";
 import {
   FaFacebookF,
@@ -74,7 +74,7 @@ const Footer = () => {
                 <FaEnvelope /> &nbsp; devgroup2211@gmail.com
               </li>
               <li>
-                <FaPhoneAlt /> &nbsp; +91 9876543210
+                <FaPhoneAlt /> &nbsp; +91 8087287499, 9819869006
               </li>
             </ul>
           </div>

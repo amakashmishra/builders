@@ -11,7 +11,7 @@ header {
 
 /* Logo */
 header img {
-  width: 170px;
+  width: 100px;
 }
 
 /* Navigation Links */
@@ -83,7 +83,7 @@ header .toggle button:hover i {
   /* Smaller Logo */
   header img {
     width: 110px;
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   /* Hide Button & Navigation */

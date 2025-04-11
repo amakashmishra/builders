@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "./header.css"
 import { nav } from "../../data/Data"
 import { Link } from "react-router-dom";
-import Logo from "../../../assets/Icons/DevGroup.png"
+import Logo from "../../../assets/Images/Brown and Gold Luxury Real Estate Business Card_20250313_185004_0000.png"
 
 const Header = () => {
   const [navList, setNavList] = useState(false)
