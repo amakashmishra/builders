@@ -13,10 +13,41 @@ import {
   FaEnvelope,
   FaPhoneAlt
 } from "react-icons/fa";
+import qrcode from "../../../assets/Images/quarecode.jpg";
+import MAHARERA from "../../../assets/Images/maharera-logo-EA64458FDF-seeklogo.com.png";
 
 const Footer = () => {
   return (
     <>
+      <section className="rera-section">
+        <div className="images">
+          <img src={qrcode} alt="MahaRERA QR Code" />
+          <img src={MAHARERA} alt="MahaRERA Logo" />
+        </div>
+
+        <div className="text-content">
+          <p className="label">MAHARERA QR Code</p>
+
+          <p>
+            This project has been registered via MahaRERA registration number
+            <strong> P52000079893 </strong>and the details are available on the website{" "}
+            <a
+              href="https://maharera.mahaonline.gov.in"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://maharera.mahaonline.gov.in
+            </a>{" "}
+            under registered projects. Site Address: Plot No. 62, Plot No 4 at
+            Deulwadi Karjat, Raigarh, 410201
+          </p>
+
+          <h3>DISCLAIMER</h3>
+          <p>
+            The contents of the website are being modified in terms of the stipulations/recommendations under the Real Estate Regulation Act, 2016 and rules made thereunder ("RERA") and accordingly, may not be fully in line thereof as of date. The content provided on this Site is intended for informational and visual purposes only and is not intended to constitute an offer or solicitation of any kind. It is artistic impression of the proposed project/layout shown on this site and is indicative of how the unit can be used. No furniture, landscape amenities or accessories shown in the visuals are provided with the apartment. All homes about which information is provided herein are subject to prior sale. We do not make any representation or give any warranty, guarantee, condition, undertaking or term either expressed or implied as to the condition, quality, state of readiness or fitness for purpose of any property or any other information on our sites. No person employed or engaged by or on behalf of us has any authority to make or give any representation or warranty whatever in relation to any property. The company is not liable for any consequences and/or any action taken by the viewer relying on the material or information on this website.
+          </p>
+        </div>
+      </section>
       <section className='footerContact'>
         <div className='container'>
           <div className='send flex'>
@@ -30,7 +61,6 @@ const Footer = () => {
           </div>
         </div>
       </section>
-
       <footer>
         <div className='container'>
           {/* Column 1 - Logo & Newsletter */}

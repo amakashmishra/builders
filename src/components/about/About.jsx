@@ -23,6 +23,14 @@ const About = () => {
             <p>Willy Trade Pvt Ltd is a dynamic and ambitious real estate development company, established to transform the landscape of Karjat. With a focus on innovation, quality, and customer satisfaction, we aim to deliver exceptional living and working spaces.</p>
             <p>To create vibrant, sustainable, and inspiring communities, exceeding customer expectations through transparency, integrity, and excellence.</p>
 
+            <h3>Key Features</h3>
+            <ul>
+              <li>Prime locations</li>
+              <li>Modern architecture</li>
+              <li>Quality construction</li>
+              <li>Amenities and services</li>
+              <li>Transparent pricings</li>
+            </ul>
             <button className='btn2' onClick={handleToggle}>
               {showMore ? "Hide Details" : "More About Us"}
             </button>
