@@ -1,17 +1,18 @@
 /* Header Styles */
 header {
   background-color: #fff;
-  height: 10vh;
+  height: 11.5vh;
   box-shadow: 0 5px 30px rgba(0, 22, 84, 0.1);
-  padding: 15px 0;
+  padding: 0px 0;
   position: sticky;
   top: 0;
   z-index: 99999;
 }
 
-/* Logo */
+/* Logo - Default for larger screens */
 header img {
-  width: 100px;
+  width: 145px; /* Increased size for desktop */
+  transition: width 0.3s ease;
 }
 
 /* Navigation Links */
@@ -80,7 +81,7 @@ header .toggle button:hover i {
     padding: 0;
   }
 
-  /* Smaller Logo */
+  /* Smaller Logo for Mobile */
   header img {
     width: 110px;
     margin-top: 0px;

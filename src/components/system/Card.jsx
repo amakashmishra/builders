@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Card = () => {
     const configurations = [
-        { type: '1 BHK', area: '575 Sq.ft', link: '#' },
-        { type: '1 BHK', area: '593 Sq.ft', link: '#' },
-        { type: '2 BHK', area: '800 Sq.ft', link: '#' },
+        { type: '1 BHK', area: 'Available', link: '#' },
+        { type: '1 BHK', area: 'Available', link: '#' },
+        { type: '2 BHK', area: 'Limited', link: '#' },
     ];
 
     return (

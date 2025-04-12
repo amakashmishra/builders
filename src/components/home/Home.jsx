@@ -9,14 +9,16 @@ import Recent from "./recent/Recent"
 import Video from "../video/video"
 import Information from "../Imfomation/Information"
 import Configuration from "../system/Configuration"
+import AboutDetails from "../AboutDetails/AboutDetails"
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Featured />
-      <Recent />
+      <AboutDetails />
       <Configuration />
+      <Recent />
+      <Featured />
       <Awards />
       <Location />
       {/* <Team /> */}
