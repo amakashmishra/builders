@@ -12,7 +12,7 @@ import Images3 from "../../../assets/Images/img3.jpg";
 import Images4 from "../../../assets/Images/img4.jpg";
 import Images5 from "../../../assets/Images/img5.jpg";
 import Images6 from "../../../assets/Images/img6.jpg";
-import brochure from "../../../assets/Images/KRISHNA HERITAGE BROCHURE FINAL copy.pdf";
+import brochure from "../../../assets/Images/KRISHNA HERITAGE BROCHURE FINAL.pdf";
 
 const images = [Images1, Images2, Images3, Images4, Images5, Images6];
 

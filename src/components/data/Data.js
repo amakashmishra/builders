@@ -37,7 +37,7 @@ import loc8 from '../../assets/Images/loc8.jpg'
 
 import fir1 from '../../assets/Images/fir.jpg'
 import fir2 from '../../assets/Images/fir1.jpeg'
-import fir3 from '../../assets/Images/fir2.jpg'
+// import fir3 from '../../assets/Images/fir2.jpg'
 import fir4 from '../../assets/Images/fir3.webp'
 import fir5 from '../../assets/Images/fir4.jpg'
 import fir6 from '../../assets/Images/fir5.jpg'
@@ -163,19 +163,11 @@ export const location = [
   },
   {
     id: 2,
-    name: "Open Car Parking",
+    name: "Covered Car Parking",
     Villas: "Private parking space",
     Apartments: "Allotted parking spots",
     Offices: "Staff and visitor parking",
     cover: fir2,
-  },
-  {
-    id: 3,
-    name: "Kids Play Area",
-    Villas: "Personal lawn space",
-    Apartments: "Shared playground",
-    Offices: "Play zone for kids",
-    cover: fir3,
   },
   {
     id: 4,

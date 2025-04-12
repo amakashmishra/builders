@@ -13,7 +13,7 @@ const Card = () => {
             {configurations.map((item, index) => (
                 <div className='box shadow' key={index}>
                     <h4 className='text-lg font-bold'>{item.type}</h4>
-                    <p className='text-sm text-gray-600 mb-2'>Carpet Area: {item.area}</p>
+                    <p className='text-sm text-gray-600 mb-2'>{item.area}</p>
                     <a href={item.link}>
                         <Link to="/contact">
                             <button className='btn' >Click here</button>
