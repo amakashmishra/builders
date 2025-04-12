@@ -85,6 +85,67 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.zoom-swiper {
+  width: 100%;
+  height: 500px;
+}
+
+.zoom-swiper img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100%;
+}
+
 
 /* Responsive Styles */
 
@@ -96,6 +157,18 @@
   }
   .recent .text {
     padding: 25px;
+  }
+
+  .modal-content {
+    padding: 15px;
+  }
+
+  .zoom-swiper {
+    height: 400px;
+  }
+
+  .close-btn {
+    font-size: 24px;
   }
 }
 
@@ -110,6 +183,19 @@
   }
   .recent .button {
     padding: 10px 20px;
+  }
+
+  .modal-content {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .zoom-swiper {
+    height: 350px;
+  }
+
+  .close-btn {
+    font-size: 22px;
   }
 }
 
@@ -133,6 +219,18 @@
   }
   .recent .img {
     height: 180px;
+  }
+
+  .modal-content {
+    padding: 1px;
+  }
+
+  .zoom-swiper {
+    height: 510px;
+  }
+
+  .close-btn {
+    font-size: 20px;
   }
 }
 

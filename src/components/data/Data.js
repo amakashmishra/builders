@@ -100,7 +100,7 @@ export const list = [
     cover2: flat2,
     cover3: flat9,
     name: "Krishna Heritage",
-    location: "Spacious 1, 2 & 3 BHK Residences",
+    location: "Spacious 1bhk, 2bhk & Commercial Shops",
   },
   {
     id: 2,
