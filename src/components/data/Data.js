@@ -25,15 +25,23 @@ import flat8 from '../../assets/Images/flat8.jpg'
 import flat9 from '../../assets/Images/flat9.jpg'
 import flat10 from '../../assets/Images/flat10.jpg'
 
-import loc1 from '../../assets/Images/loc1.jpg'
-import loc2 from '../../assets/Images/loc2.jpg'
-import loc3 from '../../assets/Images/loc3.png'
-import loc4 from '../../assets/Images/loc4.jpg'
-import loc5 from '../../assets/Images/loc5.jpg'
-import loc6 from '../../assets/Images/loc6.jpg'
-import loc7 from '../../assets/Images/loc7.jpg'
+// import loc1 from '../../assets/Images/loc1.jpg'
+// import loc2 from '../../assets/Images/loc2.jpg'
+// import loc3 from '../../assets/Images/loc3.png'
+// import loc4 from '../../assets/Images/loc4.jpg'
+// import loc5 from '../../assets/Images/loc5.jpg'
+// import loc6 from '../../assets/Images/loc6.jpg'
+// import loc7 from '../../assets/Images/loc7.jpg'
 import loc8 from '../../assets/Images/loc8.jpg'
-import loc9 from '../../assets/Images/loc9.jpg'
+// import loc9 from '../../assets/Images/loc9.jpg'
+
+import fir1 from '../../assets/Images/fir.jpg'
+import fir2 from '../../assets/Images/fir1.jpeg'
+import fir3 from '../../assets/Images/fir2.jpg'
+import fir4 from '../../assets/Images/fir3.webp'
+import fir5 from '../../assets/Images/fir4.jpg'
+import fir6 from '../../assets/Images/fir5.jpg'
+import fir7 from '../../assets/Images/fir6.jpeg'
 
 
 export const nav = [
@@ -147,77 +155,70 @@ export const awards = [
 export const location = [
   {
     id: 1,
-    name: "Flooring",
-    Villas: "Vitrified tiles in all rooms",
-    Apartments: "Anti-skid tiles in wet areas",
-    Offices: "Granite finish flooring",
-    cover: loc1,
+    name: "Fire Security",
+    Villas: "Fire alarms and extinguishers",
+    Apartments: "Sprinklers and fire panels",
+    Offices: "Fire system with exits",
+    cover: fir1,
   },
   {
     id: 2,
-    name: "Kitchen",
-    Villas: "Modular kitchen with granite top",
-    Apartments: "Tiled backsplash & sink",
-    Offices: "Compact pantry space",
-    cover: loc2,
+    name: "Open Car Parking",
+    Villas: "Private parking space",
+    Apartments: "Allotted parking spots",
+    Offices: "Staff and visitor parking",
+    cover: fir2,
   },
   {
     id: 3,
-    name: "Paints",
-    Villas: "Premium weatherproof paint",
-    Apartments: "Smooth emulsion finish",
-    Offices: "Low-VOC wall paint",
-    cover: loc3,
+    name: "Kids Play Area",
+    Villas: "Personal lawn space",
+    Apartments: "Shared playground",
+    Offices: "Play zone for kids",
+    cover: fir3,
   },
   {
     id: 4,
-    name: "Doors & Windows",
-    Villas: "Teak wood doors, UPVC windows",
-    Apartments: "Flush doors, sliding windows",
-    Offices: "Glass doors, aluminum frames",
-    cover: loc4,
+    name: "Power Back Up",
+    Villas: "Inverter provision",
+    Apartments: "Backup for common areas",
+    Offices: "Full power backup",
+    cover: fir4,
   },
   {
     id: 5,
-    name: "Plumbing",
-    Villas: "Branded CP fittings",
-    Apartments: "Modern plumbing setup",
-    Offices: "Commercial-grade fittings",
-    cover: loc5,
-  },
-  {
-    id: 6,
-    name: "Electrical",
-    Villas: "Modular switches, inverter ready",
-    Apartments: "Copper wiring & MCBs",
-    Offices: "Ample sockets, concealed wiring",
-    cover: loc6,
-  },
-  {
-    id: 7,
-    name: "Washroom",
-    Villas: "Wall-mounted WC & basin",
-    Apartments: "Modern fixtures & tiles",
-    Offices: "Compact restrooms",
-    cover: loc7,
-  },
-  {
-    id: 8,
-    name: "Water Tanks",
-    Villas: "Overhead RCC tanks",
-    Apartments: "Common water storage",
-    Offices: "Automated supply system",
+    name: "24 X 7 Water Supply",
+    Villas: "Overhead tank system",
+    Apartments: "Dual water source",
+    Offices: "Auto water supply",
     cover: loc8,
   },
   {
-    id: 9,
-    name: "Security",
-    Villas: "Video door phone, CCTV",
-    Apartments: "24/7 security with guards",
-    Offices: "Access control system",
-    cover: loc9,
+    id: 6,
+    name: "Rain Water Harvesting",
+    Villas: "Water collection pits",
+    Apartments: "Central system setup",
+    Offices: "Recharge setup in place",
+    cover: fir5,
+  },
+  {
+    id: 7,
+    name: "24 X 7 Security",
+    Villas: "CCTV and video door phone",
+    Apartments: "Guards and cameras",
+    Offices: "Secure entry system",
+    cover: fir6,
+  },
+  {
+    id: 8,
+    name: "Lift",
+    Villas: "Optional private lift",
+    Apartments: "Backup-enabled lifts",
+    Offices: "Commercial elevators",
+    cover: fir7,
   },
 ];
+
 
 export const team = [
   {

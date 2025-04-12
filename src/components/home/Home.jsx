@@ -8,6 +8,7 @@ import Recent from "./recent/Recent"
 // import Team from "./team/Team"
 import Video from "../video/video"
 import Information from "../Imfomation/Information"
+import Configuration from "../system/Configuration"
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero />
       <Featured />
       <Recent />
+      <Configuration />
       <Awards />
       <Location />
       {/* <Team /> */}
