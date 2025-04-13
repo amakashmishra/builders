@@ -23,13 +23,13 @@ header a {
 }
 
 header a:hover {
-  color: #27ae60;
+  color: #dbb773;
 }
 
 /* Span Badge */
 header span {
   padding: 0 6px;
-  background: #27ae60;
+  background: #dbb773;
   border-radius: 50px;
   color: #ffffff;
   margin-right: 4px;
@@ -53,12 +53,12 @@ header .toggle button {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #27ae60;
+  color: #dbb773;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 header .toggle button:hover {
-  color: #27ae60;
+  color: #dbb773;
   transform: scale(1.1);
 }
 
@@ -110,7 +110,7 @@ header .toggle button:hover i {
     top: 10vh;
     left: 0;
     width: 100%;
-    background-color: #27ae60;
+    background-color: #dbb773;
     padding: 15px;
   }
 

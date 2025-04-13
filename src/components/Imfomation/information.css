@@ -15,7 +15,7 @@
     align-items: flex-start;
     gap: 16px;
     background: #f9f9f9;
-    border-left: 4px solid #27ae60;
+    border-left: 4px solid #dbb773;
     border-radius: 12px;
     padding: 20px 24px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
@@ -31,7 +31,7 @@
   .info-box i {
     font-size: 24px;
     color: #fff;
-    background: #27ae60;
+    background: #dbb773;
     padding: 10px;
     border-radius: 50%;
     min-width: 42px;

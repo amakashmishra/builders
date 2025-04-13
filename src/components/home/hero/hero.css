@@ -61,7 +61,7 @@
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
-  background-color: #27ae60;
+  background-color: #dbb773;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -72,7 +72,7 @@
 }
 
 .hero-btn:hover {
-  background-color: #219653;
+  background-color: #dbb773;
 }
 
 

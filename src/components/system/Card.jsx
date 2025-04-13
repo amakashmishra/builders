@@ -5,7 +5,8 @@ const Card = () => {
     const configurations = [
         { type: '1 BHK', area: 'Available', link: '#' },
         { type: '1 BHK', area: 'Available', link: '#' },
-        { type: '2 BHK', area: 'Limited', link: '#' },
+        { type: '2 BHK', area: 'Available', link: '#' },
+        { type: 'Commercial Shops', area: 'Limited', link: '#' },
     ];
 
     return (

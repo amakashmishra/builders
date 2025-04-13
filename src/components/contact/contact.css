@@ -80,7 +80,7 @@
 .contact button {
   width: 100%;
   padding: 12px;
-  background: #27ae60;
+  background: #dbb773;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -90,7 +90,7 @@
 }
 
 .contact button:hover {
-  background: #27ae60;
+  background: #dbb773;
 }
 
 /* Map Styling */

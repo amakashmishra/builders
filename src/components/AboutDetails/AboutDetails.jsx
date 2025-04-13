@@ -13,8 +13,8 @@ const AboutDetails = () => {
               title="Welcome to Krishna Heritage"
               subtitle="Discover premium builder flats designed for comfort, style, and modern living"
             />
-            <p>Willy Trade Pvt Ltd is a dynamic and ambitious real estate development company, established to transform the landscape of Karjat. With a focus on innovation, quality, and customer satisfaction, we aim to deliver exceptional living and working spaces.</p>
-            <p>To create vibrant, sustainable, and inspiring communities, exceeding customer expectations through transparency, integrity, and excellence.</p>
+            <p>Located at NANA MASTER NAGAR, one of the most peaceful locations in Karjat.It is near to Karjat Railway Station and a well-developed area. Surrounded by green open spaces and natural tranquility. You will enjoy an active lifestyle</p>
+            {/* <p>Surrounded by green open spaces and natural tranquility. You will enjoy an active lifestyle.</p> */}
 
             <h3>Key Features</h3>
             <ul>
@@ -24,6 +24,8 @@ const AboutDetails = () => {
               <li>Amenities and services</li>
               <li>Transparent pricing</li>
             </ul>
+
+            <p>This profile establishes Willy Trade Pvt Ltd as a new player in the real estate industry, focused on quality, innovation, and customer satisfaction.</p>
           </div>
           <div className='right row'>
             <img src={img} alt='about' />

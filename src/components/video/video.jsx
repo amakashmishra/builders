@@ -1,6 +1,7 @@
-import React from "react"
-import Heading from "../common/Heading"
-import "./video.css"
+import React from "react";
+import Heading from "../common/Heading";
+import "./video.css";
+import Logo from "../../assets/Images/Brown and Gold Luxury Real Estate Business Card_20250313_185004_0000.png";
 
 const Video = () => {
     return (
@@ -24,20 +25,32 @@ const Video = () => {
                         ></iframe>
                     </div>
 
-                    {/* Right: About Content */}
+                    {/* Right: Logo + Content */}
                     <div className='video-right'>
-                        <h3>About Krishna Heritage</h3>
-                        <p>
-                            Krishna Heritage is more than just a residential space — it's a vibrant community designed for comfort, quality living, and peace of mind.
-                        </p>
-                        <p>
-                            Willy Trade Pvt Ltd is a dynamic and ambitious real estate development company, established to transform the landscape of Karjat. With a focus on innovation, quality, and customer satisfaction, we aim to deliver exceptional living and working spaces.
-                        </p>
+                        <div className='logo-text-split'>
+                            <div className='logo-block'>
+                                <img src={Logo} alt='Dev Group Logo' />
+                            </div>
+                            <div className='text-block'>
+                                <h3>About Dev Group</h3>
+                                <p>
+                                    Dev group is a dynamic and ambitious real estate development company,
+                                    established to transform the landscape of Karjat. With a focus on innovation,
+                                    quality, and customer satisfaction, we aim to deliver exceptional living and working spaces.
+                                </p>
+
+                                <h4>Our Mission</h4>
+                                <p>
+                                    To create vibrant, sustainable, and inspiring communities, exceeding customer expectations
+                                    through transparency, integrity, and excellence.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Video
+export default Video;

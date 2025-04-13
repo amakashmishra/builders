@@ -1,7 +1,7 @@
 /* ======= ABOUT SECTION ======= */
 .about {
-  margin-bottom: 80px;
-  padding: 60px 0;
+  /* margin-bottom: 80px; */
+  /* padding: 60px 0; */
 }
 
 .about .container {
@@ -39,7 +39,7 @@
   padding: 12px 24px;
   font-size: 16px;
   border-radius: 5px;
-  background: #27ae60;
+  background: #dbb773;
   color: white;
   border: none;
   cursor: pointer;
@@ -47,7 +47,7 @@
 }
 
 .about .btn2:hover {
-  background: #218c54;
+  background: #dbb773;
 }
 
 /* ======= MORE INFO (Toggle Section) ======= */
@@ -90,7 +90,7 @@
   font-size: 18px;
   color: #1c1c1c;
   margin: 25px 0 10px;
-  border-bottom: 2px solid #28a745;
+  border-bottom: 2px solid #dbb773;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -117,7 +117,7 @@
   }
 
   .about .left {
-    text-align: center;
+    text-align: left;
   }
 
   .about p {
@@ -155,7 +155,7 @@
 
 @media screen and (max-width: 576px) {
   .about {
-    padding: 30px 15px;
+    padding: 0px 15px;
   }
 
   .about .btn2 {

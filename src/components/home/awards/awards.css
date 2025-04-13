@@ -27,7 +27,7 @@ html, body {
 }
 
 .awards .heading p {
-  color: #27ae60;
+  color: #dbb773;
   font-size: 18px;
 }
 
@@ -35,7 +35,6 @@ html, body {
   color: #fff;
   font-size: 30px;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 
 /* Responsive Grid Layout */
