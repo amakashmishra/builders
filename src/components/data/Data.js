@@ -43,6 +43,11 @@ import fir5 from '../../assets/Images/fir4.jpg'
 import fir6 from '../../assets/Images/fir5.jpg'
 import fir7 from '../../assets/Images/fir6.jpeg'
 
+import sch from '../../assets/Images/sch.webp'
+import sch1 from '../../assets/Images/sch1.jpg'
+import sch2 from '../../assets/Images/sch2.webp'
+import sch3 from '../../assets/Images/sch3.jpg'
+import sch4 from '../../assets/Images/sch4.webp'
 
 export const nav = [
   {
@@ -73,9 +78,34 @@ export const featured = [
     total: "5 Min",
   },
   {
+    cover: sch,
+    name: "School",
+    total: "5 Min",
+  },
+  {
+    cover: sch1,
+    name: "Hotel",
+    total: "5 Min",
+  },
+  {
+    cover: sch2,
+    name: "Hospital",
+    total: "5 Min",
+  },
+  {
+    cover: dmart,
+    name: "DMart",
+    total: "5 Min",
+  },
+  {
     cover: expressway,
     name: "Mumbai Pune Expressway",
     total: "15 Min",
+  },
+  {
+    cover: sch3,
+    name: "Fire Station",
+    total: "5 Min",
   },
   {
     cover: airport,
@@ -83,14 +113,14 @@ export const featured = [
     total: "30 Min",
   },
   {
+    cover: sch4,
+    name: "Garden & Play Area",
+    total: "5 Min",
+  },
+  {
     cover: reliance,
     name: "Reliance Petrol Pump",
     total: "3 Min",
-  },
-  {
-    cover: dmart,
-    name: "DMart",
-    total: "5 Min",
   },
 ]
 export const list = [
