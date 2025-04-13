@@ -1,11 +1,12 @@
 import React, { useState } from "react"
 import { list } from "../../data/Data"
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay, Zoom } from "swiper/modules"
+import { Pagination, Autoplay, Zoom, Navigation } from "swiper/modules"
 
 import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/zoom"
+import "swiper/css/navigation" // <- Added for nav arrows
 import "./recent.css"
 
 const RecentCard = () => {
@@ -66,8 +67,9 @@ const RecentCard = () => {
           <div className='modal-content' onClick={(e) => e.stopPropagation()}>
             <button className='close-btn' onClick={closeGallery}>✕</button>
             <Swiper
-              modules={[Pagination, Zoom]}
+              modules={[Pagination, Zoom, Navigation]}
               pagination={{ clickable: true }}
+              navigation={true}
               zoom={true}
               loop={selectedImages.length > 1}
               className='zoom-swiper'
