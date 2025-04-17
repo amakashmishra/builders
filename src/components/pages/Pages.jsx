@@ -11,12 +11,14 @@ import Contact from "../contact/Contact"
 import Information from "../Imfomation/Information"
 import Location from "../home/location/Location"
 import EnquireNowButton from "../EnquireNow/EnquireNowButton"
+import ScrollToTop from "../common/footer/ScrollToTop"
 
 const Pages = () => {
   return (
     <>
       <Router>
         <Header />
+        <ScrollToTop />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
