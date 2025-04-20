@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../common/Heading";
 import "./video.css";
 import Logo from "../../assets/Images/Brown and Gold Luxury Real Estate Business Card_20250313_185004_0000.png";
+import brochure from "../../assets/Images/KRISHNA HERITAGE BROCHURE FINAL.pdf";
 
 const Video = () => {
     return (
@@ -44,6 +45,9 @@ const Video = () => {
                                     To create vibrant, sustainable, and inspiring communities, exceeding customer expectations
                                     through transparency, integrity, and excellence.
                                 </p>
+                                <a href={brochure} className="hero-btn" download>
+                                    Download Brochure
+                                </a>
                             </div>
                         </div>
                     </div>
