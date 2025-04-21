@@ -1,35 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import plan1 from '../../assets/Images/floor.png';
+import plan2 from '../../assets/Images/floor1.png';
+import plan3 from '../../assets/Images/MAGAZA-PROJELERI.webp';
 
 const Card = () => {
-  const configurations = [
-    { type: '1 BHK', area: 'Available' },
-    { type: '2 BHK', area: 'Available' },
-    { type: 'Commercial Shops', area: 'Limited' },
-  ];
+    const [selectedImage, setSelectedImage] = useState(null);
 
-  const handleWhatsAppClick = (type) => {
-    const phoneNumber = "918087287499"; // Indian number with country code
-    const message = `Hi, I am interested in your ${type} property. Please share more details.`;
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  };
+    const configurations = [
+        { type: '1 BHK', area: 'Available', image: plan1 },
+        { type: '2 BHK', area: 'Available', image: plan2 },
+        { type: 'Commercial Shops', area: 'Limited', image: plan3 },
+    ];
 
-  return (
-    <div className='content grid5 mtop'>
-      {configurations.map((item, index) => (
-        <div className='box shadow' key={index}>
-          <h4 className='text-lg font-bold'>{item.type}</h4>
-          <p className='text-sm text-gray-600 mb-2'>{item.area}</p>
-          <button
-            className='btn'
-            onClick={() => handleWhatsAppClick(item.type)}
-          >
-            Enquire Now
-          </button>
+    const handleOpenPopup = (image) => {
+        setSelectedImage(image);
+    };
+
+    const handleClosePopup = () => {
+        setSelectedImage(null);
+    };
+
+    return (
+        <div>
+            <div className='content grid5 mtop'>
+                {configurations.map((item, index) => (
+                    <div className='box shadow p-4 text-center' key={index}>
+                        <h4 className='text-lg font-bold'>{item.type}</h4>
+                        <p className='text-sm text-gray-600 mb-2'>{item.area}</p>
+                        <button
+                            className='btn bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600'
+                            onClick={() => handleOpenPopup(item.image)}
+                        >
+                            Click here
+                        </button>
+                    </div>
+                ))}
+            </div>
+
+            {selectedImage && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <button className="modal-close" onClick={handleClosePopup}>&times;</button>
+                        <img src={selectedImage} alt="Floor Plan" />
+                    </div>
+                </div>
+            )}
+
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
 export default Card;
