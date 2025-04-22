@@ -101,6 +101,9 @@ const Footer = () => {
                 <FaMapMarkerAlt /> &nbsp; Shop no.-24,New Vijaya Bhuvan Society, Dadiseth Road,S V Road,Malad(w),Mumbai-64
               </li>
               <li>
+                <FaMapMarkerAlt /> &nbsp; Site Address - Plot No. 62, Plot No 4 at Deulwadi Karjat, Raigarh, 410201
+              </li>
+              <li>
                 <FaEnvelope /> &nbsp; devgroup2211@gmail.com
               </li>
               <li>

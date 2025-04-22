@@ -19,7 +19,7 @@ import flat2 from '../../assets/Images/flat2.jpg'
 import flat3 from '../../assets/Images/Ground Floor.jpg'
 import flat4 from '../../assets/Images/First Floor.jpg'
 import flat5 from '../../assets/Images/7th Floor.jpg'
-import flat6 from '../../assets/Images/flat6.jpg'
+// import flat6 from '../../assets/Images/flat6.jpg'
 import flat7 from '../../assets/Images/floor.png'
 import flat8 from '../../assets/Images/floor1.png'
 import flat9 from '../../assets/Images/flat9.jpg'
@@ -153,7 +153,7 @@ export const list = [
     cover: flat3,
     cover1: flat4,
     cover2: flat5,
-    cover3: flat6,
+    // cover3: flat6,
     cover4: flat10,
     name: "Krishna Heritage",
     location: "Ample Parking Space",
