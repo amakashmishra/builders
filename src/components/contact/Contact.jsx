@@ -71,7 +71,12 @@ const Contact = () => {
                 required
               />
             </div>
-
+            <input
+              type='text'
+              name='user_mobile'
+              placeholder='Mobile Number'
+              required
+            />
             <input
               type='text'
               name='subject'
