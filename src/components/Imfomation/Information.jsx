@@ -5,47 +5,47 @@ import "./information.css"
 const highlights = [
   {
     icon: "fa-chart-line",
-    text: "Fast-Growing Willy Trade Real Estate Market Expands",
+    text: "Fast-Growing Krishna Heritage Real Estate Market Expands",
   },
   {
     icon: "fa-leaf",
-    text: "Willy Trade Offers a Green and Pollution-Free Living Environment",
+    text: "Krishna Heritage Offers a Green and Pollution-Free Living Environment",
   },
   {
     icon: "fa-ship",
-    text: "Nhava-Seva Sea Port is 56 Km Away from Willy Trade",
+    text: "Nhava-Seva Sea Port is 56 Km Away from Krishna Heritage",
   },
   {
     icon: "fa-plane-departure",
-    text: "Navi Mumbai’s Upcoming International Airport is 39 Km from Willy Trade",
+    text: "Navi Mumbai’s Upcoming International Airport is 39 Km from Krishna Heritage",
   },
   {
     icon: "fa-train",
-    text: "Willy Trade Railway provides connectivity to Mumbai, Pune, Panvel, and Khopoli",
+    text: "Krishna Heritage Railway provides connectivity to Mumbai, Pune, Panvel, and Khopoli",
   },
   {
     icon: "fa-road",
-    text: "National and state highways link Willy Trade to Mumbai, Pune, and Nashik",
+    text: "National and state highways link Krishna Heritage to Mumbai, Pune, and Nashik",
   },
   {
     icon: "fa-mountain-sun",
-    text: "Weekend getaways in Willy Trade include picnics, river rafting, trekking, and hiking",
+    text: "Weekend getaways in Krishna Heritage include picnics, river rafting, trekking, and hiking",
   },
   {
     icon: "fa-building-circle-check",
-    text: "Proposed Central Railway car shed land acquisition in Willy Trade is completed",
+    text: "Proposed Central Railway car shed land acquisition in Krishna Heritage is completed",
   },
   {
     icon: "fa-hotel",
-    text: "ND Film Studio and luxury five-star hotels are in Willy Trade",
+    text: "ND Film Studio and luxury five-star hotels are in Krishna Heritage",
   },
   {
     icon: "fa-tree-city",
-    text: "Explore Matheran Hill Station, scenic waterfalls, and historic forts in Willy Trade",
+    text: "Explore Matheran Hill Station, scenic waterfalls, and historic forts in Krishna Heritage",
   },
   {
     icon: "fa-university",
-    text: "Reliance to establish world-class university on 800 acres in Willy Trade",
+    text: "Reliance to establish world-class university on 800 acres in Krishna Heritage",
   },
   {
     icon: "fa-ship",
@@ -53,19 +53,19 @@ const highlights = [
   },
   {
     icon: "fa-train-subway",
-    text: "Railway Harbour Line extension connects Panvel to Willy Trade through Mahape",
+    text: "Railway Harbour Line extension connects Panvel to Krishna Heritage through Mahape",
   },
   {
     icon: "fa-golf-ball-tee",
-    text: "Located on Willy Trade-Chauk Highway, 9 Aces Golf Greens Academy stands",
+    text: "Located on Krishna Heritage Chauk Highway, 9 Aces Golf Greens Academy stands",
   },
   {
     icon: "fa-city",
-    text: "NAINA covers 270 revenue villages including Willy Trade, Khalapur, and Pen",
+    text: "NAINA covers 270 revenue villages including Krishna Heritage, Khalapur, and Pen",
   },
   {
     icon: "fa-star",
-    text: "Celebrity farmhouses (Film Stars, Politicians, Cricketers) in Willy Trade and Khalapur",
+    text: "Celebrity farmhouses (Film Stars, Politicians, Cricketers) in Krishna Heritag and Khalapur",
   },
 ]
 
@@ -74,8 +74,8 @@ const Information = () => {
     <section className='team background'>
       <div className='container'>
         <Heading
-          title='Why Willy Trade is the Perfect Choice'
-          subtitle='Explore the booming real estate and lifestyle advantages of investing in Willy Trade.'
+          title='Why Krishna Heritage is the Perfect Choice'
+          subtitle='Explore the booming real estate and lifestyle advantages of investing in Krishna Heritage.'
         />
         <div className='karjat-info grid2 mtop'>
           {highlights.map((item, index) => (
