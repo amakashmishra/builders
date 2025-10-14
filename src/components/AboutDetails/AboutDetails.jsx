@@ -25,7 +25,7 @@ const AboutDetails = () => {
               <li>Transparent pricing</li>
             </ul>
 
-            <p>This profile establishes Willy Trade Pvt Ltd as a new player in the real estate industry, focused on quality, innovation, and customer satisfaction.</p>
+            <p>This profile establishes Krishna Heritage Pvt Ltd as a new player in the real estate industry, focused on quality, innovation, and customer satisfaction.</p>
           </div>
           <div className='right row'>
             <img src={img} alt='about' />
